@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Cunduccion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="main">
+        <section id=matricula class="matricula-section">
+            <header class="section-header">
+                <p class="titulo">Escuela de conduccion</p>
+                <h1>Empieza el camino al volante</h1>
+                <p>
+                    Ingresa tus datos para continuar con tu matricula
+                </p>
+            </header>    
+                <form class="formulario" action="#">
+                    <header class="form-header">
+                        <div>
+                            <h2>Matriculate con nosotros</h2>
+                            <p>Toma la iniciativa y da el primer paso hacia tu libertad</p>
+                        </div>
+                    </header>
+
+                    <div class="form-grid">
+                        <div class="form-grupo">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" required >
+                        </div>
+
+                        <div class="form-grupo">
+                            <label for="correo">Correo electronico</label>
+                            <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                        </div>
+
+                        <div class="form-grupo">
+                            <label for="telefono">Numero de telefono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+                        </div>
+
+                        <div class="form-grupo">
+                            <label for="curso">Tipo de curso</label>
+                            <select id="curso" name="curso" required>
+                                    <option value="carro">Carro</option>
+                                    <option value="moto">Moto</option>
+                                    <option value="mixto">Mixto</option>
+                            </select>        
+                        </div>
+
+                        <div class="form-grupo form-grupo-full" >
+                            <label for="mensaje">Mensaje o comentario</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Cuentanos como podemos ayudarte" required></textarea>
+                        </div>
+
+                        <div class="form-grupo-full">  
+                        <button type="submit" class="submit-button">Enviar datos</button>
+                        </div>
+                    </div>
+                </form>
+        </section>
+    </main>
+    
+</body>
+</html>
